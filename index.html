@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Info</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            if (window.location.pathname === '/latest-version') {
+                const latestVersion = {
+                    version: "1.2.0",
+                    url: "http://example.com/path/to/latest/apk"
+                };
+
+                document.body.innerHTML = JSON.stringify(latestVersion);
+            } else {
+                const latestVersion = {
+                    version: "1.2.0",
+                    url: "http://example.com/path/to/latest/apk"
+                };
+
+                document.body.innerHTML = JSON.stringify(latestVersion);
+            }
+        });
+    </script>
+</body>
+</html>
